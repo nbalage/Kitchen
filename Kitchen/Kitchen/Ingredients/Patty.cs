@@ -10,5 +10,10 @@ namespace Kitchen.Ingredients
         {
             base.InitializeIngredient(true, 100, 1000);
         }
+
+        public override string ToString()
+        {
+            return "Patty";
+        }
     }
 }

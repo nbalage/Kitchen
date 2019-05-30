@@ -10,5 +10,10 @@ namespace Kitchen.Ingredients
         {
             base.InitializeIngredient(false, 200);
         }
+
+        public override string ToString()
+        {
+            return "Lettuce";
+        }
     }
 }

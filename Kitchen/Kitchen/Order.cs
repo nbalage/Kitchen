@@ -15,9 +15,13 @@ namespace Kitchen
 
         public int Count { get; set; }
 
-        public Order(ingreds ingreds, int count)
+        public string Name { get; set; }
+
+        public Order(string name, ingreds ingreds, int count)
         {
             this.Count = count;
+            this.Ingredients = ingreds;
+            this.Name = name;
             if (ingreds.Equals(Menu.BasicBurger) ||
                 ingreds.Equals(Menu.CheeseBurger) ||
                 ingreds.Equals(Menu.DoubleBurger) ||

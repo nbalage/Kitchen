@@ -7,14 +7,14 @@ namespace Kitchen.Ingredients
     [Flags]
     public enum Ingredients
     {
-        Bun,
-        Patty,
-        DoublePatty,
-        Lettuce,
-        Tomato,
-        Cheese,
-        DoubleCheese,
-        Ketchup,
-        Fries
+        Bun = 1,
+        Patty = 2,
+        DoublePatty = 4,
+        Lettuce = 8,
+        Tomato = 16,
+        Cheese = 32,
+        DoubleCheese = 64,
+        Ketchup = 128,
+        Fries = 256
     }
 }

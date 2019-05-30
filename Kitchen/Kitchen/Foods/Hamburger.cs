@@ -10,16 +10,22 @@ namespace Kitchen.Foods
         public Hamburger()
         {
             Name = "Hamburger";
+            Ingredients = new List<Ingredient>();
         }
 
-        public Hamburger(string name, params Ingredient[] ingredients)
+        public override string ToString()
         {
-            this.Name = name;
-
-            foreach (var ing in ingredients)
-            {
-                Ingredients.Add(ing);
-            }
+            return "Hamburger";
         }
+
+        //public Hamburger(string name, params Ingredient[] ingredients)
+        //{
+        //    this.Name = name;
+
+        //    foreach (var ing in ingredients)
+        //    {
+        //        Ingredients.Add(ing);
+        //    }
+        //}
     }
 }
